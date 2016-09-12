@@ -22,9 +22,9 @@ Goodbye!
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
-program = False
+program = True
 
-while not False
+while not False:
     print('hi')
     program = True
 
