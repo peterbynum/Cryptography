@@ -22,7 +22,7 @@ Goodbye!
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
-program = True
+off = False
 
 while not False:
     print('hi')
