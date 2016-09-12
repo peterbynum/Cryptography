@@ -22,10 +22,21 @@ Goodbye!
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
-off = False
-
-while not off:
-    print('hi')
-    program = True
-
+on = True
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
+
+
+while on:
+    input = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+    if input == 'e':
+        m = input("Message: ")
+        k = input("Key: ")
+        
+    elif input == 'd':
+        m = input("Message: ")
+        k = input("Key: ")
+        
+    elif input == 'q':
+        on = False    
+    else:
+        print("Did not understand command, try again.")
