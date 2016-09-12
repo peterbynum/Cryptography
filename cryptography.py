@@ -24,7 +24,7 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 off = False
 
-while not False:
+while not off:
     print('hi')
     program = True
 
