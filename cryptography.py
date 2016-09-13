@@ -45,7 +45,7 @@ while on:
             mlist.append(associations.find(m[i]))# creates mlist
         for i in range(0,len(k)):
             klist.append(associations.find(k[i]))# creates klist
-        for i in range(0,len(mlist)):#creates encryption
+        for i in range(0,len(mlist)):#creates encryptionlist
             encryptionlist.append(mlist[i]+klist[i%len(klist)])
         for i in range(0,len(encryptionlist)):
             encryption.append(associations[encryptionlist[i]%len(associations)])
@@ -54,6 +54,22 @@ while on:
     elif command == 'd':
         m = input("Message: ")
         k = input("Key: ")
+        mlist = []
+        klist = []
+        decryptionlist = []
+        decryption = []
+        
+        
+        for i in range(0,len(m)):
+            mlist.append(associations.find(m[i]))# creates mlist
+        for i in range(0,len(k)):
+            klist.append(associations.find(k[i]))# creates klist
+        for i in range(0,len(mlist)):#creates decryptionlist
+            decryptionlist.append(mlist[i]-klist[i%len(klist)])
+        for i in range(0,len(decryptionlist)):
+            decryption.append(associations[decryptionlist[i]%len(associations)])
+        print(''.join(decryption))
+        
         
     elif command == 'q':
         print('Goodbye!')
