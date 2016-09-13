@@ -50,7 +50,6 @@ while on:
         for i in range(0,len(encryptionlist)):
             encryption.append(associations[encryptionlist[i]%len(associations)])
         print(''.join(encryption))
-            
         
     elif command == 'd':
         m = input("Message: ")
