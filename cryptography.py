@@ -1,9 +1,8 @@
 """
 cryptography.py
-Author: <your name here>
+Author: Peter Bynum
 Credit: How to count characters in a list: http://stackoverflow.com/questions/25934586/finding-the-amount-of-characters-of-all-words-in-a-list-in-python
-
-Assignment:
+Assignment: Cryptography
 
 Write and submit a program that encrypts and decrypts user data.
 
